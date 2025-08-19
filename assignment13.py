@@ -2,13 +2,23 @@
 #===================================
 #Description: Write a program that prompts the user to enter a string and then checks whether it is a palindrome.
 # A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward.
-from assignment11 import user_input
+
 
 #input user enters string
-user1_input = input("check palindrome:")
+input_value = input("Enter a word to check if it is a palindrome:")
 #processing
-# break input into individual characters. split string
-#iterate through characters
-# check to see if it is same backwards use operator.?
-# if user1_input is same forward and backward print palindrome
+# break input into individual characters. split string. use list to separate by character
+# : are using for slicing -1 indicates backwards
+# check to see if it is same backwards use operator ==
+# if input is same forward and backward print palindrome
 #challaenge use loop
+
+#loop continues to execute as long as condition is true
+while True:
+    value = list(input_value)
+    if value == value[::-1]:
+        print("yes it is a palindrome")
+        break
+    else:
+        print("Not a palindrome")
+    break
